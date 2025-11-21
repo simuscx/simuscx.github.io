@@ -1,44 +1,741 @@
+<!--Simas Pozniakovas, EEf-24 grupe-->
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simas Pozniakovas - Skriptinis programavimas</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mano CV</title>
+  <meta name="keywords" content="">
+  <meta name="author" content="Simas Pozniakovas">
+  <meta name="description" content="Simas Pozniakovas CV puslapis">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Craftivo
+  * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
+  * Updated: Oct 04 2025 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <h1>Simas Pozniakovas, EEf-24
-    </h1>
 
-    <h5>Elektros energetikos inžinerijos studijų programa</h5>
+<body class="index-page">
 
-<u>
-    <p>Esu antro kurso studentas, besidomintis įvairiais dalykais. 
-       Mėgstmiausias filmas - trainspotting.</p>
-    </u>
-    <p>
-        <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML pamokos</a>
-    </p>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-    <img src="paveiksleliai/profilis.jpg" alt="Simas prie kompiuterio" width="250">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename"></h1>
+      </a>
 
-    <h3>Domiuosi šiomis sritimis:</h3>
-    <ol>
-        <li><strong>Dirbtinis intelektas</strong></li>
-        <li><b>Automatika ir robotika</b></li>
-        <li>Relinės sistemos</li>
-    </ol>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-    <h3>Įgūdžiai, kuriuos noriu išmokti studijų metu:</h3>
-    <ul>
-        <li><em>Planuot laiką</em></li>
-        <li><i>Suprast elektrą</i></li>
-        <li>Valdyt elektrą</li>
-    </ul>
+      <a class="btn-getstarted" href="#about">Get Started</a>
 
-    <div>
-        <p>Šiame konteineryje pateikti keli elementai:</p>
-        <a href="https://www.vilniustech.lt" target="_blank">Vilnius Tech svetainė</a><br>
-        <img src="paveiksleliai/logo.png" alt="Vilnius Tech logotipas" width="120">
     </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/profile/profile-bg-5.JPG" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Hi, I'm Simas Pozniakovas</h2>
+            <p>I'm a <span class="typed" data-typed-items="Engineer, Volunteer, Entrepeneur, Social Activist"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About Me</span>
+        <h2>About Me</h2>
+        <p>I’d describe myself as a responsibility-driven perfectionist - someone who values precision, consistency, and clarity in everything I do.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-avatar">
+                  <img src="assets/img/profile/profile-square-3.JPG" class="img-fluid" alt="">
+                  <div class="status-indicator"></div>
+                </div>
+                <h3>Simas Pozniakovas</h3>
+                <span class="role">Full-time Student </span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <h4>1</h4>
+                  <p>Project</p>
+                </div>
+                <div class="stat-item">
+                  <h4>2+</h4>
+                  <p>Years</p>
+                </div>
+                <div class="stat-item">
+                  <h4>2</h4>
+                  <p>Awards</p>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <a href="#" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
+                <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+              </div>
+
+              <div class="social-connect">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="bio-section">
+                <div class="section-tag">About Me</div>
+                <h2>My priorities</h2>
+                <p>As an enthusiastic student of electrical engineering and physics, I am passionate about turning innovative concepts into practical solutions. My experience covers scientific research, electronics projects, and programming, always blending theory with hands-on application. Active involvement in student organizations and leadership roles allows me to collaborate with others, share knowledge, and foster a supportive academic community</p>
+                <p>Driven by curiosity and a commitment to personal growth, I continuously seek challenges that expand my skills. Whether working on signal processing, designing circuits in MATLAB, or guiding youth through scout activities, I always strive to make a positive impact and shape the future of technology.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                  <i class="bi bi-briefcase"></i>
+                  <div class="detail-content">
+                    <span>Experience</span>
+                    <strong>2+ Years</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-mortarboard"></i>
+                  <div class="detail-content">
+                    <span>Degree</span>
+                    <strong>Bachelors of Electrical Engineering</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="detail-content">
+                    <span>Based In</span>
+                    <strong>Vilnius, LT</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <strong>spozniakovas@gmail.com</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
+                  <i class="bi bi-phone"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <strong>+370 641 88330</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-calendar-check"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
+                <div class="section-tag">Core Skills</div>
+                <h3>Technical Proficiency</h3>
+
+                <div class="skills-list skills-animation">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">MATLAB &amp; Data Analysis</span>
+                      <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Electrical Circuit Design &amp; Simulation (KiCad)</span>
+                      <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Signal Processing &amp; Neural Networks</span>
+                      <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Javascript &amp; PostgreSQL</span>
+                      <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Engineering Documentation &amp; GitHub</span>
+                      <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Resume</span>
+        <h2>Resume</h2>
+        <p>Dedicated electrical engineering student with strong experience in electronics, programming, and science communication. Actively contributing to student leadership initiatives and passionate about both theoretical and practical aspects of engineering.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="experience-section">
+              <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Experience</span>
+                  <h2>Professional Journey</h2>
+                  <p>Combining technical, educational, and organizational experience through academic, extracurricular, and leadership roles.</p>
+                </div>
+              </div>
+
+              <div class="experience-cards">
+                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-buildings"></i>
+                    </div>
+                    <div class="period-badge">Current</div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Student Researcher</h3>
+                    <p class="company-name">VILNIUS TECH</p>
+                    <span class="duration">2024 - Present</span>
+                    <p class="description">Designing and testing electronic circuits, performing simulations in MATLAB and KiCad, and contributing to research in signal processing and neural networks.</p>
+                    <div class="skills-tags">
+                      <span class="skill-tag">MATLAB</span>
+                      <span class="skill-tag">Circuit Design</span>
+                      <span class="skill-tag">Innovation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Vice-Chairman & International Affairs Coordinator</h3>
+                    <p class="company-name">Students’ Representation, VILNIUS TECH</p>
+                    <span class="duration">2024 - Present</span>
+                    <p class="description">Organizing university events, representing students internationally, and coordinating educational and cultural projects to support the student community.</p>
+                  </div>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Assistant Troop Leader</h3>
+                    <p class="company-name">Lietuvos Skautija</p>
+                    <span class="duration">2013 - Present</span>
+                    <p class="description">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="education-section">
+              <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Education</span>
+                  <h2>Academic Background</h2>
+                  <p>Strong foundation in electrical engineering, computer science, and practical electronics, supplemented by additional technical training.</p>
+                </div>
+              </div>
+
+              <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
+                <div class="timeline-track">
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2024 - Present</span>
+                        <span class="degree-level">Bachelors</span>
+                      </div>
+                      <h4>Bachelor of Electrical Engineering</h4>
+                      <p class="institution">VILNIUS TECH</p>
+                      <p class="description">Focusing on signal processing, electronics, and power circuit analysis.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2020-2024</span>
+                        <span class="degree-level">High School</span>
+                      </div>
+                      <h4>Julius Janonis Gymnasium</h4>
+                      <p class="institution">Julius Janonis Gymnasium</p>
+                      <p class="description">Profiled in engineering, physics, and mathematics with additional involvement in science olympiads.</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section><!-- /Resume Section -->
+
+<!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Services</span>
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>Engineering Identity</h4>
+              <p>Developing a personal brand rooted in technical proficiency, leadership, and an analytical approach to engineering challenges.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item featured">
+              <div class="featured-tag">Featured</div>
+              <div class="icon-wrapper">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <h4>Technical Documentation</h4>
+              <p>Creating clear, user-friendly documentation for electronics projects and MATLAB analysis, making complex information easily accessible to technical audiences.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>Circuit Design & Simulation</h4>
+              <p>Designing and simulating electronic circuits using MATLAB and KiCad, translating theoretical knowledge into practical systems.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4>Mobile Technology Integration</h4>
+              <p>Integrating mobile platforms into engineering projects for remote monitoring, control, and data acquisition in real-world applications.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h4>Electronics Communication</h4>
+              <p>Enhancing electronic communication networks through robust protocols and efficient signal processing, ensuring reliable data transfer for modern applications.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4>System Diagnostics</h4>
+              <p>Comprehensive diagnostics for electronic systems and power supplies, optimizing reliability and performance through advanced analytical tools.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4>Data Analysis</h4>
+              <p>Applying programming and analytical methods to interpret lab results, visualize data trends, and support decision-making in engineering projects.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Electrical Safety</h4>
+              <p>Promoting electrical safety standards in lab and field environments. Implementing protective solutions and risk mitigation for circuit design and installations.</p>
+              <a href="service-details.html" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-box">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h3>Transform Your Vision Into Reality</h3>
+                  <p>Partner with us to bring your ideas to life with innovative solutions tailored to your needs</p>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                  <a href="service-details.html" class="cta-btn">Start Your Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaboration, questions, or project inquiries using the contact information below. Enthusiastic about networking, sharing knowledge, and exploring new opportunities in engineering and technology. Looking forward to connecting with fellow professionals and students</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>Sauletekio al. 19</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h3>Call Me</h3>
+                <p>+370 641 88330</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h3>Email Me</h3>
+                <p>spozniakovas@gmail.com</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Simas Pozniakovas</span>
+          </a>
+          <p>the CV website of Simas Pozniakovas.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Me</h4>
+          <p>Sauletekio al. 19/p>
+          <p>Vilnius, LT 10224</p>
+          <p>Lithuania</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+370 641 88330</span></p>
+          <p><strong>Email:</strong> <span>spozniakovas@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
